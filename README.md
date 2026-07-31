@@ -154,6 +154,14 @@ Suggested contribution areas:
 
 ---
 
+## Related Projects
+
+* [Cash Allocation Model](https://github.com/pedrocvaranda/modelo_alocacao_caixa) — Capital allocation system with scenario simulation and ML optimization
+* [Varandian Optics Simulator](https://github.com/pedrocvaranda/varadian-optics-simulator) — Light propagation simulator in curved spaces
+* [Portfolio Tracker](https://github.com/pedrocvaranda/portfolio-tracker) - Monte Carlo simulation engine for market data collection, price validation, parameter calibration, and forecast backtesting
+
+——-
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
