@@ -79,6 +79,23 @@ RETRIEVAL STRATEGY:
 
 ---
 
+### File contract (optional)
+
+When running in a file-based environment that uses the `.cognitree/` layout described in `SKILL.md`:
+
+- Treat `.cognitree/active.md` as the primary active memory document.
+  - Keep it small and high-signal, storing the current objective, constraints, and latest context pack.
+- Write episodic summaries to `.cognitree/episodic/<session-or-phase>.md`.
+  - Each file should capture what happened in that session or phase in a compact, readable way.
+- Promote stable rules, specs, and decisions into `.cognitree/long-term.md`.
+  - This file should remain relatively small and represent the “source of truth” for long-term knowledge.
+- Archive old logs and deprecated branches into `.cognitree/latent/`.
+  - Use this folder for audit and deep debugging rather than everyday reasoning.
+
+Follow the Memory Model section in `SKILL.md` for detailed rules on when to promote, demote, and read from each layer.
+
+---
+
 ## Behavior guidelines
 
 - Bias towards keeping user preferences, explicit constraints, and domain rules in active or long-term memory.
