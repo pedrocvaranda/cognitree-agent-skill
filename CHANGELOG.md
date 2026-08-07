@@ -39,6 +39,7 @@ The format is based on [Semantic Versioning](https://semver.org/).
   - `memory-hierarchy.md`,
   - `drift-detector.md`.
 - Updated all internal links (README, SKILL.md, guides) to use kebab-case prompt names.
+- Updated `prompts/memory-hierarchy.md` to explicitly reference the `.cognitree/` file contract described in `SKILL.md`.
 
 ---
 
