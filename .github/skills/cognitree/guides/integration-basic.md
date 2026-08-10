@@ -4,6 +4,22 @@ This guide explains how to add the CogniTree Skill to a typical AI agent setup w
 
 ---
 
+## 0. Create the `.cognitree/` folder in your project
+
+In the project where your agent works, create:
+
+```text
+.cognitree/
+  active.md        (can start empty)
+  long-term.md     (can start empty)
+  episodic/
+  latent/
+
+CogniTree does not create these files for you; it defines how they should be used.
+Your agent or tooling is responsible for writing and reading them.
+
+---
+
 ## 1. Install the skill files
 
 Clone the repository:
