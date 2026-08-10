@@ -17,6 +17,7 @@ In the project where your agent works, create:
 ```
 
 CogniTree does not create these files for you; it defines how they should be used.
+
 Your agent or tooling is responsible for writing and reading them.
 
 ---
