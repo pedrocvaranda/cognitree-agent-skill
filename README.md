@@ -203,6 +203,68 @@ The intended framing is:
 
 This positions CogniTree as a complement to, not a competitor of, existing context management features.
 
+--- 
+
+## Local Protocol
+
+CogniTree works especially well as the “mental OS” of a local coding stack, where:
+
+- the model,
+- the memory contract,
+- and the project files
+
+live together on your machine.
+
+### Typical local setup
+
+A practical protocol for local work looks like this:
+
+- **Ollama Desktop** — local inference and chat UI  
+- **Model profile:** `cognitree-local`  
+- **Base model:** Qwen 2.5 1.5B (or any other small, fast model you prefer)  
+- **Project workspace:** your code, docs, tests  
+- **Memory contract:** `.cognitree/` directory inside the project
+
+Example project layout:
+
+```text
+my-project/
+  src/
+  tests/
+  .cognitree/
+    active.md
+    long-term.md
+    episodic/
+    latent/
+```
+
+### How CogniTree fits into this stack
+
+- When you start a significant task (planning, refactor, feature work), you:
+  - run **Context Optimizer** to build a context pack from the current history,  
+  - write that pack into `.cognitree/active.md`.
+
+- As the work evolves, you:
+  - run **Memory Hierarchy** to:
+    - keep `active.md` small and high-signal,
+    - push detailed logs into `episodic/`,
+    - promote stable rules into `long-term.md`,
+    - archive dead branches into `latent/`.
+
+- On long or tricky workflows, you:
+  - run **Drift Detector** to:
+    - check if you are still solving the original problem,
+    - write an alignment note into `active.md`,
+    - adjust the plan or ask for confirmation if scope has drifted.
+
+In this “local protocol”:
+
+- Ollama + `cognitree-local` is the **engine**,  
+- `.cognitree/` is the **memory**,  
+- CogniTree Skill (SKILL.md + prompts) is the **discipline** that keeps the engine and memory working together.
+
+This setup lets you run a Qwen‑based local agent that behaves more like a persistent, context‑aware coding partner instead of a stateless chat box.
+
 ---
 
 ## Project Structure
